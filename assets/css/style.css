@@ -1,0 +1,212 @@
+html{
+	position: relative;
+}			
+
+.jumbotron{
+	margin-bottom: 0px;
+	padding-top: 100px;
+	background-image: url(../img/bg1.jpeg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+.jumbotron img{
+	width: 200px;
+	border: 4px solid #eaeaea; 
+	box-shadow: 6px 6px 10px rgba(0,0,0,7)
+} 
+.jumbotron h1{
+	color: white;
+	font-family: imprint mt shadow;
+	text-shadow: 5px 5px 10px rgba(0,0,0,5)
+}
+.jumbotron p{
+	padding-top: 7px;
+	color: white;
+	font-family: times new roman;
+	text-shadow: 4px 4px 10px rgba(0,0,0,5)
+}
+hr{
+	border: 3px solid #333;
+}
+section{
+	min-height: 600px; 
+}
+.portfolio{
+	background-color: #eee
+}
+footer{
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+	background-color: #333;
+}
+footer img{
+	height: 50px;
+}
+footer img:hover{
+	background-color: lightblue;
+}
+footer p{
+	padding-top: 10px;
+	font-size: 15px;
+	color: #aaa;
+	font-family: times new roman;
+}
+.navbar img{
+	width: 250px;
+	height: 100px;
+}
+.navbar{
+	background-color: #000;
+	opacity: 0.5;
+	filter: alpha (opacity=);
+}
+.about{
+	color: white;
+	background-image: url(../img/bg2.jpeg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-shadow: 4px 4px 10px rgba(0,0,0,5)
+}
+.about p{
+	margin-top: 20px;
+	font-family: times new roman;
+	font-size: 20px;
+	
+}
+
+.about h2{
+	font-family: lucida calligraphy;
+	font-size: 50px;
+}
+.nav{
+	font-family: lucida calligraphy;
+	font-size: 20px;
+	background-color: #000;
+	margin-top: 20px;
+}
+.portfolio h2{
+	font-family: lucida calligraphy;
+	font-size: 50px;
+}
+.contact{
+	color: white;
+	background-image: url(../img/bg6.jpeg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	text-shadow: 4px 4px 10px rgba(0,0,0,5)
+
+}
+.contact h2{
+	padding-top: 15px;
+	font-family: lucida calligraphy;
+	font-size: 50px;
+	animation-duration: repeat;
+}
+.navbar ul li:hover{
+	background-color: darkgrey;
+	transition: 0.5s all;
+}
+.portfolio{
+	color: white;
+	background-image: url(../img/bg3.jpeg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0 -100px;
+	text-shadow: 4px 4px 10px rgba(0,0,0,5)
+}
+.portfolio .row{
+	opacity: 0;
+	transform: translate(0, -40px);
+	transition: .3s;
+}
+.portfolio .row.tampilkan{
+	opacity: 1;
+	transform: translate(0.0);
+}
+
+.about .row{
+	opacity: 0;
+	transform: translate(0, -40px);
+	transition: .3s;
+}
+.about .row.tampilkan{
+	opacity: 1;
+	transform: translate(0.0);
+}
+
+.thumbnail:hover{
+	background-color: darkblue;
+	transition: 0.5s all;
+}
+.overlay{
+	text-align: center;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0);
+	z-index: 9999;
+	transition: 1s;
+}
+.overlay:target{
+	width: auto;
+	height: auto;
+	bottom: 0;
+	right: 0;
+	background: rgba(0,0,0,.8);
+}
+.overlay img{
+	max-height: 100%;
+	box-shadow: 2px 2px 7px rgba(0,0,0,.5);
+}
+.overlay:target img{
+	animation: zoomdanfade 2s;
+}
+.overlay .close{
+	font-family: times new roman;
+	font-size: 35px;
+	color: white;
+	padding-right: 20px;
+	padding-top: 20px;
+}
+@keyframes zomdanfad{
+	0%{
+		transform: scale(0);
+		opacity: 0;
+	}
+	100%{
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.video{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-image: url(../img/bg4.jpeg);
+	background-attachment: fixed;
+	padding-left: auto;
+	padding-bottom: auto;
+	
+}
+
+.video h2{
+		color: black;
+	font-family: lucida calligraphy;
+	font-size: 50px;
+}
+.jumbotron audio{
+	float: left;
+}
+video{
+	max-width: 100%;
+}
